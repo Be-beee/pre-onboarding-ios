@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B579EBD829A3150D009315CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579EBD729A3150D009315CC /* MainView.swift */; };
 		B5DAA63129A1DDAF00AAB351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DAA63029A1DDAF00AAB351 /* AppDelegate.swift */; };
 		B5DAA63329A1DDAF00AAB351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DAA63229A1DDAF00AAB351 /* SceneDelegate.swift */; };
 		B5DAA63529A1DDAF00AAB351 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DAA63429A1DDAF00AAB351 /* MainViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B579EBD729A3150D009315CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B5DAA62D29A1DDAF00AAB351 /* PreOnboardingiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreOnboardingiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DAA63029A1DDAF00AAB351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5DAA63229A1DDAF00AAB351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				B5DAA63029A1DDAF00AAB351 /* AppDelegate.swift */,
 				B5DAA63229A1DDAF00AAB351 /* SceneDelegate.swift */,
 				B5DAA63429A1DDAF00AAB351 /* MainViewController.swift */,
+				B579EBD729A3150D009315CC /* MainView.swift */,
 				B5DAA63929A1DDB100AAB351 /* Assets.xcassets */,
 				B5DAA63B29A1DDB100AAB351 /* LaunchScreen.storyboard */,
 				B5DAA63E29A1DDB100AAB351 /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DAA63529A1DDAF00AAB351 /* MainViewController.swift in Sources */,
+				B579EBD829A3150D009315CC /* MainView.swift in Sources */,
 				B5DAA63129A1DDAF00AAB351 /* AppDelegate.swift in Sources */,
 				B5DAA63329A1DDAF00AAB351 /* SceneDelegate.swift in Sources */,
 			);

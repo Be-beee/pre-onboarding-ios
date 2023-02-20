@@ -8,10 +8,19 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    private let rootView = MainView()
 
+    // MARK: - Life Cycle
+    
+    override func loadView() {
+        self.view = rootView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemCyan
     }
 
 
