@@ -46,8 +46,14 @@ final class ImageDownloadView: UIView {
     
     // MARK: - Properties
     
+    private(set) var url = ""
     
     // MARK: - Init
+    
+    convenience init(url: String, frame: CGRect = .zero) {
+        self.init(frame: frame)
+        self.url = url
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -68,9 +74,9 @@ final class ImageDownloadView: UIView {
     }
     
     private func configureSubviews() {
-        stackView.addArrangedSubview(imageView)
-        stackView.addArrangedSubview(progressView)
-        stackView.addArrangedSubview(downloadButton)
+        [imageView, progressView, downloadButton].forEach { subview in
+            stackView.addArrangedSubview(subview)
+        }
         
         addSubview(stackView)
     }
