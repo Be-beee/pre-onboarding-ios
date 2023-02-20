@@ -39,6 +39,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B579EBDD29A3301F009315CC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B5DAA63429A1DDAF00AAB351 /* MainViewController.swift */,
+				B579EBD729A3150D009315CC /* MainView.swift */,
+				B579EBDB29A316CE009315CC /* ImageDownloadView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B579EBDE29A33036009315CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5DAA63929A1DDB100AAB351 /* Assets.xcassets */,
+				B5DAA63B29A1DDB100AAB351 /* LaunchScreen.storyboard */,
+				B5DAA63029A1DDAF00AAB351 /* AppDelegate.swift */,
+				B5DAA63229A1DDAF00AAB351 /* SceneDelegate.swift */,
+				B5DAA63E29A1DDB100AAB351 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B5DAA62429A1DDAF00AAB351 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +80,8 @@
 		B5DAA62F29A1DDAF00AAB351 /* PreOnboardingiOS */ = {
 			isa = PBXGroup;
 			children = (
-				B5DAA63029A1DDAF00AAB351 /* AppDelegate.swift */,
-				B5DAA63229A1DDAF00AAB351 /* SceneDelegate.swift */,
-				B5DAA63429A1DDAF00AAB351 /* MainViewController.swift */,
-				B579EBD729A3150D009315CC /* MainView.swift */,
-				B579EBDB29A316CE009315CC /* ImageDownloadView.swift */,
-				B5DAA63929A1DDB100AAB351 /* Assets.xcassets */,
-				B5DAA63B29A1DDB100AAB351 /* LaunchScreen.storyboard */,
-				B5DAA63E29A1DDB100AAB351 /* Info.plist */,
+				B579EBDD29A3301F009315CC /* Presentation */,
+				B579EBDE29A33036009315CC /* Resources */,
 			);
 			path = PreOnboardingiOS;
 			sourceTree = "<group>";
@@ -285,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NSCRL9SYQK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PreOnboardingiOS/Info.plist;
+				INFOPLIST_FILE = PreOnboardingiOS/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -312,7 +328,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NSCRL9SYQK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PreOnboardingiOS/Info.plist;
+				INFOPLIST_FILE = PreOnboardingiOS/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
