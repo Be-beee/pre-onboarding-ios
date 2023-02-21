@@ -50,11 +50,9 @@
 		B579EBDD29A3301F009315CC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				B5DAA63429A1DDAF00AAB351 /* MainViewController.swift */,
-				B579EBD729A3150D009315CC /* MainView.swift */,
-				B579EBDB29A316CE009315CC /* ImageDownloadView.swift */,
-				B58C875629A4AD300069FDDD /* MainViewModel.swift */,
-				B58C875829A4B7B80069FDDD /* MainViewModelDelegate.swift */,
+				B5BC9E5029A4FE44009DB495 /* Controller */,
+				B5BC9E4E29A4FE32009DB495 /* View */,
+				B5BC9E4F29A4FE3B009DB495 /* ViewModel */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -78,6 +76,32 @@
 				B579EBE329A331D6009315CC /* NetworkManager.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B5BC9E4E29A4FE32009DB495 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B579EBD729A3150D009315CC /* MainView.swift */,
+				B579EBDB29A316CE009315CC /* ImageDownloadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5BC9E4F29A4FE3B009DB495 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B58C875629A4AD300069FDDD /* MainViewModel.swift */,
+				B58C875829A4B7B80069FDDD /* MainViewModelDelegate.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5BC9E5029A4FE44009DB495 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5DAA63429A1DDAF00AAB351 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B5DAA62429A1DDAF00AAB351 = {
