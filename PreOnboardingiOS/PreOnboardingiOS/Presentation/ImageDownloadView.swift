@@ -27,7 +27,7 @@ final class ImageDownloadView: UIView {
         return progressView
     }()
     
-    private let downloadButton: UIButton = {
+    private(set) var downloadButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Load", for: .normal)
         
@@ -44,16 +44,7 @@ final class ImageDownloadView: UIView {
         return stackView
     }()
     
-    // MARK: - Properties
-    
-    private(set) var url = ""
-    
     // MARK: - Init
-    
-    convenience init(url: String, frame: CGRect = .zero) {
-        self.init(frame: frame)
-        self.url = url
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -66,7 +57,7 @@ final class ImageDownloadView: UIView {
         super.init(coder: coder)
     }
     
-    // MARK: - Functions
+    // MARK: - Configure Functions
     
     private func configure() {
         configureSubviews()
@@ -90,4 +81,9 @@ final class ImageDownloadView: UIView {
         ])
     }
     
+    // MARK: - Configure Function
+    
+    func configureImage(with image: UIImage?) {
+        imageView.image = image
+    }
 }
