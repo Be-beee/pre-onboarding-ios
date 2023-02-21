@@ -8,8 +8,6 @@
 import Foundation
 
 protocol MainViewModelDelegate: AnyObject {
-    func mainViewEmptyImageChanged(at index: Int)
-    
     func mainViewImageChanged(at index: Int)
     
     func mainViewDownloadErrorOccured()

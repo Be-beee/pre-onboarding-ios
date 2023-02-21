@@ -20,7 +20,8 @@ final class MainViewModel {
     // MARK: - Functions
     
     func download(at index: Int) {
-        delegate?.mainViewEmptyImageChanged(at: index)
+        images[index] = UIImage(systemName: "photo")
+        delegate?.mainViewImageChanged(at: index)
         
         DispatchQueue.global().async { [weak self] in
             guard let self,

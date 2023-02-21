@@ -51,10 +51,6 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: MainViewModelDelegate {
-    func mainViewEmptyImageChanged(at index: Int) {
-        rootView.configureImage(at: index, with: UIImage(systemName: "photo"))
-    }
-    
     func mainViewImageChanged(at index: Int) {
         rootView.configureImage(at: index, with: viewModel.images[index])
     }
