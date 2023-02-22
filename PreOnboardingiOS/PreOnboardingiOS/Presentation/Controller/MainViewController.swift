@@ -52,7 +52,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: MainViewModelDelegate {
     func mainViewImageChanged(at index: Int) {
-        rootView.configureImage(at: index, with: viewModel.images[index])
+        rootView.setUpImage(at: index, with: viewModel.images[index])
     }
     
     func mainViewDownloadErrorOccured() {

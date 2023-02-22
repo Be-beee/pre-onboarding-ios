@@ -81,9 +81,13 @@ final class ImageDownloadView: UIView {
         ])
     }
     
-    // MARK: - Configure Function
+    // MARK: - Setup Functions
     
-    func configureImage(with image: UIImage?) {
+    func setUpImage(with image: UIImage?) {
         imageView.image = image
+    }
+    
+    func setUpProgress(with percentage: Float) {
+        progressView.progress = percentage
     }
 }

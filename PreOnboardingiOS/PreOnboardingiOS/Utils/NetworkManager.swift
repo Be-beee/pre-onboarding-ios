@@ -37,7 +37,7 @@ final class NetworkManager {
         request: URLRequest,
         completion: @escaping (Result<Data, Error>) -> Void
     ) {
-        let session = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard (response as? HTTPURLResponse)?.statusCode == 200, error == nil else {
                 return completion(.failure(NetworkError.connectionFailed))
             }
@@ -49,6 +49,6 @@ final class NetworkManager {
             completion(.success(data))
         }
         
-        session.resume()
+        task.resume()
     }
 }

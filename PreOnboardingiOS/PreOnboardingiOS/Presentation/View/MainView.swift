@@ -75,8 +75,14 @@ final class MainView: UIView {
         ])
     }
     
-    func configureImage(at index: Int, with image: UIImage?) {
-        imageDownloadViews[index].configureImage(with: image)
+    // MARK: - Setup Functions
+    
+    func setUpImage(at index: Int, with image: UIImage?) {
+        imageDownloadViews[index].setUpImage(with: image)
+    }
+    
+    func setUpProgress(at index: Int, with percentage: Float) {
+        imageDownloadViews[index].setUpProgress(with: percentage)
     }
 }
 
